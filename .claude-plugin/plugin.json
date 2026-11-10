@@ -1,13 +1,14 @@
 {
   "name": "databuck",
   "displayName": "DataBuck",
-  "version": "0.3.0",
+  "version": "1.0.0",
   "description": "Inspect, monitor, and improve data quality in your own DataBuck deployment, with confirmation before every change.",
   "author": {
     "name": "FirstEigen",
     "url": "https://firsteigen.com/"
   },
   "homepage": "https://firsteigen.com/",
+  "privacyPolicyUrl": "https://firsteigen.com/privacy-policy/",
   "repository": "https://github.com/FirstEigen-Labs/databuck-plugin",
   "license": "MIT",
   "keywords": ["data-quality", "validation", "data-trust-score", "databuck"],

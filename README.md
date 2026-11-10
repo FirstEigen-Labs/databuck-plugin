@@ -21,8 +21,18 @@ to be installed besides the assistant itself.
 | `plugin.json` | OpenAI | OpenAI plugin manifest (skills only) |
 | `codex-config.example.toml` | OpenAI | Server block users add to Codex's `config.toml` |
 | `scripts/build-openai-zip.sh` | OpenAI | Builds the zip for OpenAI's upload portal |
+| `CHANGELOG.md` | Both | Release history, one entry per version |
 
-Keep `version` in `.claude-plugin/plugin.json` and `plugin.json` the same.
+## Versioning
+
+Every release is mandatory-versioned:
+
+1. Bump `version` in **both** `.claude-plugin/plugin.json` and `plugin.json`
+   (same value, [Semantic Versioning](https://semver.org/)).
+2. Add an entry to [CHANGELOG.md](CHANGELOG.md).
+3. Commit, then tag the release `vX.Y.Z` and push the tag.
+4. For OpenAI, build and upload the zip for that tag; each upload is reviewed
+   as its own version.
 
 ## Connect your DataBuck server
 
@@ -86,7 +96,8 @@ your confirmation first.
 
 Your requests and the tool calls made for them go only to the DataBuck server
 you configure, authenticated with your own keys. The plugin itself sends
-nothing to FirstEigen or anywhere else and stores no credentials.
+nothing to FirstEigen or anywhere else and stores no credentials. See the
+[FirstEigen privacy policy](https://firsteigen.com/privacy-policy/).
 
 ## License
 

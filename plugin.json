@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "databuck",
-  "version": "0.3.0",
+  "version": "1.0.0",
   "description": "Inspect, monitor, and improve data quality in your own DataBuck deployment, with confirmation before every change.",
   "author": {
     "name": "FirstEigen",
@@ -26,6 +26,7 @@
         "developerName": "FirstEigen",
         "category": "Productivity",
         "websiteURL": "https://firsteigen.com/",
+        "privacyPolicyURL": "https://firsteigen.com/privacy-policy/",
         "logo": "./assets/logo.png",
         "composerIcon": "./assets/logo.png",
         "brandColor": "#A44D9E",
