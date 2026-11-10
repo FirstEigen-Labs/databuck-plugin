@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "databuck": {
+      "type": "http",
+      "url": "${user_config.server_url}",
+      "headers": {
+        "X-Databuck-Access-Key": "${user_config.access_key}",
+        "X-Databuck-Secret-Key": "${user_config.secret_key}"
+      }
+    }
+  }
+}

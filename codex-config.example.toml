@@ -1,0 +1,18 @@
+# Add to ~/.codex/config.toml (Codex app: Settings > Open config.toml).
+# Replace the placeholders with your DataBuck server URL and the keys from
+# DataBuck's Generate MCP Token screen. Never share this file once filled in.
+[mcp_servers.databuck]
+enabled = true
+url = "https://<DATABUCK_HOST>:8001/"
+# Bulk validation and reruns wait for runs to finish; the default is 60s.
+tool_timeout_sec = 600
+
+[mcp_servers.databuck.http_headers]
+X-Databuck-Access-Key = "<ACCESS_KEY>"
+X-Databuck-Secret-Key = "<SECRET_KEY>"
+
+# Terminal-only alternative: keep the keys in environment variables instead.
+# Replace the [mcp_servers.databuck.http_headers] section above with this line
+# under [mcp_servers.databuck], and export DATABUCK_ACCESS_KEY and
+# DATABUCK_SECRET_KEY in ~/.zshrc. The Codex app does not read ~/.zshrc.
+# env_http_headers = { "X-Databuck-Access-Key" = "DATABUCK_ACCESS_KEY", "X-Databuck-Secret-Key" = "DATABUCK_SECRET_KEY" }

@@ -1,0 +1,40 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "databuck",
+  "version": "0.3.0",
+  "description": "Inspect, monitor, and improve data quality in your own DataBuck deployment, with confirmation before every change.",
+  "author": {
+    "name": "FirstEigen",
+    "url": "https://firsteigen.com/"
+  },
+  "homepage": "https://firsteigen.com/",
+  "repository": "https://github.com/FirstEigen-Labs/databuck-plugin",
+  "license": "MIT",
+  "keywords": [
+    "data-quality",
+    "validation",
+    "data-trust-score",
+    "databuck"
+  ],
+  "extensions": {
+    "com.openai": {
+      "onboardingSkill": "./skills/databuck-setup/SKILL.md",
+      "interface": {
+        "displayName": "DataBuck",
+        "shortDescription": "Data quality operations",
+        "longDescription": "Connect to your own DataBuck server to review datasources, validation results, and Data Trust Scores, and to create validations, rules, schedules, and column checks with confirmation before every change.",
+        "developerName": "FirstEigen",
+        "category": "Productivity",
+        "websiteURL": "https://firsteigen.com/",
+        "logo": "./assets/logo.png",
+        "composerIcon": "./assets/logo.png",
+        "brandColor": "#A44D9E",
+        "defaultPrompt": [
+          "List my DataBuck datasources.",
+          "Which DataBuck tables have a Data Trust Score below 50?",
+          "Show the summary of my latest DataBuck validation."
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "name": "databuck",
+  "displayName": "DataBuck",
+  "version": "0.3.0",
+  "description": "Inspect, monitor, and improve data quality in your own DataBuck deployment, with confirmation before every change.",
+  "author": {
+    "name": "FirstEigen",
+    "url": "https://firsteigen.com/"
+  },
+  "homepage": "https://firsteigen.com/",
+  "repository": "https://github.com/FirstEigen-Labs/databuck-plugin",
+  "license": "MIT",
+  "keywords": ["data-quality", "validation", "data-trust-score", "databuck"],
+  "userConfig": {
+    "server_url": {
+      "type": "string",
+      "title": "DataBuck MCP server URL",
+      "description": "Your DataBuck MCP endpoint, e.g. https://<your-databuck-host>:8001/",
+      "required": true
+    },
+    "access_key": {
+      "type": "string",
+      "title": "DataBuck access key",
+      "description": "Your own access key from DataBuck's Generate MCP Token screen",
+      "required": true,
+      "sensitive": true
+    },
+    "secret_key": {
+      "type": "string",
+      "title": "DataBuck secret key",
+      "description": "Your own secret key from DataBuck's Generate MCP Token screen",
+      "required": true,
+      "sensitive": true
+    }
+  }
+}
