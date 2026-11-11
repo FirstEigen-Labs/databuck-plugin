@@ -3,6 +3,20 @@
 All notable changes to the DataBuck plugin. Versions follow
 [Semantic Versioning](https://semver.org/); each release is tagged `vX.Y.Z`.
 
+## [Unreleased]
+
+### Added
+
+- `supportURL` (https://firsteigen.com/contact-us/) and `termsOfServiceURL`
+  (DataBuck Terms of Service, January 2026) in the OpenAI manifest, and a
+  terms link in the README.
+- OpenAI manifest: `capabilities` (empty) and `publication.release_notes`.
+
+### Changed
+
+- OpenAI `longDescription` now states intended users, requirements, and
+  limitations, as the submission guide asks.
+
 ## [1.0.0] - 2026-11-10
 
 First release from this repository. One plugin for Claude Code and OpenAI

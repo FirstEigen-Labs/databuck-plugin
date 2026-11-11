@@ -97,7 +97,8 @@ your confirmation first.
 Your requests and the tool calls made for them go only to the DataBuck server
 you configure, authenticated with your own keys. The plugin itself sends
 nothing to FirstEigen or anywhere else and stores no credentials. See the
-[FirstEigen privacy policy](https://firsteigen.com/privacy-policy/).
+[FirstEigen privacy policy](https://firsteigen.com/privacy-policy/) and the
+[DataBuck Terms of Service](https://saasops-databuck.s3.us-east-1.amazonaws.com/DataBuck_Terms_of_Service_Jan_2026.pdf).
 
 ## License
 

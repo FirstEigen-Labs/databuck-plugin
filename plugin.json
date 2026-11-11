@@ -22,11 +22,14 @@
       "interface": {
         "displayName": "DataBuck",
         "shortDescription": "Data quality operations",
-        "longDescription": "Connect to your own DataBuck server to review datasources, validation results, and Data Trust Scores, and to create validations, rules, schedules, and column checks with confirmation before every change.",
+        "longDescription": "Connect to your own DataBuck server to review datasources, validation results, and Data Trust Scores, and to create validations, rules, schedules, and column checks with confirmation before every change. Built for data engineers and data-quality teams who already run DataBuck. Requirements: a DataBuck server you can reach, plus an access key and secret key from DataBuck's Generate MCP Token screen. The plugin includes no server connection or credentials; in Codex you add your server to config.toml, and the setup skill walks you through it. Without that connection the skills cannot fetch or change any DataBuck data.",
+        "capabilities": [],
         "developerName": "FirstEigen",
         "category": "Productivity",
         "websiteURL": "https://firsteigen.com/",
         "privacyPolicyURL": "https://firsteigen.com/privacy-policy/",
+        "supportURL": "https://firsteigen.com/contact-us/",
+        "termsOfServiceURL": "https://saasops-databuck.s3.us-east-1.amazonaws.com/DataBuck_Terms_of_Service_Jan_2026.pdf",
         "logo": "./assets/logo.png",
         "composerIcon": "./assets/logo.png",
         "brandColor": "#A44D9E",
@@ -35,6 +38,9 @@
           "Which DataBuck tables have a Data Trust Score below 50?",
           "Show the summary of my latest DataBuck validation."
         ]
+      },
+      "publication": {
+        "release_notes": "First release: ten DataBuck skills for datasources, validations, bulk validation, reruns, schedulers, custom rules, column checks, database queries, and data-quality reports, plus a setup skill for connecting your own DataBuck server."
       }
     }
   }
